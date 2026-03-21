@@ -8,7 +8,7 @@ st.set_page_config(page_title="Financial Dashboard", layout="wide")
 st.title("📊 Financial Topic Modeling Dashboard")
 
 # Load data
-df = pd.read_csv("data/processed_data.csv")
+df = pd.read_csv("https://github.com/meaninditadeb2-eng/financial-topic-modeling-dashboard/blob/main/financial_news_Data.csv")
 
 docs = df["clean_text"].tolist()
 

@@ -1,38 +1,38 @@
-# 📊 Financial Intelligence Dashboard using Transformer-Based Topic Modeling
+# 📊 Financial Intelligence Dashboard using Topic Modeling
 
-## 🚀 Project Overview
+## 🚀 Overview
 
-This project builds an end-to-end **Financial News Topic Modeling System** using both traditional and modern NLP techniques.
+This project builds an end-to-end **Financial News Topic Modeling Dashboard** to extract meaningful insights from unstructured business news data.
 
-It leverages real-time data from the NewsAPI to extract meaningful business insights from unstructured financial news.
+It combines **traditional NLP models (LDA, NMF)** with a **transformer-based model (BERTopic)** to demonstrate how modern techniques improve topic quality and business understanding.
 
 ---
 
 ## 🎯 Objectives
 
 * Extract hidden topics from financial news
-* Compare traditional vs transformer-based topic models
-* Generate business insights from textual data
-* Build an interactive dashboard for visualization
+* Compare traditional vs transformer-based models
+* Generate actionable business insights
+* Build an interactive dashboard using Streamlit
 
 ---
 
 ## 🧠 Models Used
 
-### 🔹 1. LDA (Latent Dirichlet Allocation)
+### 🔹 LDA (Latent Dirichlet Allocation)
 
-* Probabilistic model based on word frequency
-* Baseline for topic modeling
+* Based on word frequency
+* Serves as baseline model
 
-### 🔹 2. NMF (Non-negative Matrix Factorization)
+### 🔹 NMF (Non-negative Matrix Factorization)
 
 * Uses TF-IDF representation
 * Produces more interpretable topics than LDA
 
-### 🔹 3. BERTopic (Transformer-Based)
+### 🔹 BERTopic (Transformer-Based)
 
 * Uses BERT embeddings
-* Clustering + semantic understanding
+* Captures semantic meaning
 * Produces highly coherent topics
 
 ---
@@ -52,56 +52,47 @@ It leverages real-time data from the NewsAPI to extract meaningful business insi
 ## 🔄 Project Pipeline
 
 ```text
-NewsAPI → Data Collection → NLP Preprocessing → 
-LDA / NMF → BERTopic → Topic Labeling → 
-Sentiment Analysis → Streamlit Dashboard
+Data Collection (API) → Data Preprocessing → 
+LDA / NMF Modeling → BERTopic Modeling → 
+Topic Labeling → Visualization → Dashboard
 ```
 
 ---
 
 ## 📊 Key Features
 
-✔ Real-time data collection using API
 ✔ NLP preprocessing pipeline
-✔ Comparative analysis (LDA vs NMF vs BERTopic)
-✔ Topic labeling for business understanding
-✔ Sentiment analysis integration
+✔ Comparative topic modeling (LDA vs NMF vs BERTopic)
+✔ Transformer-based semantic analysis
 ✔ Interactive Streamlit dashboard
+✔ Topic visualization and distribution
 
 ---
 
 ## 📈 Business Insights
 
-* Stock market dominates financial news coverage
-* Inflation-related topics show negative sentiment trends
-* M&A topics indicate corporate growth activity
-* Transformer-based models outperform traditional methods in topic coherence
+* Financial news is dominated by market-related topics
+* Economic indicators like inflation show distinct topic clusters
+* Transformer-based models provide more meaningful insights compared to traditional methods
 
 ---
 
 ## 🖥️ Dashboard Features
 
-* Topic visualization (interactive)
+* Topic overview and clustering
+* Interactive topic visualization
 * Topic distribution analysis
-* Sentiment analysis by topic
-* Data filtering and exploration
+* Filterable data exploration
 
 ---
 
 ## 📁 Project Structure
 
 ```text
-financial-topic-modeling
+financial-topic-modeling-dashboard
 │
-├── data/
-│   └── processed_data.csv
-│
-├── model/
-│   └── topic_model/
-│
-├── app/
-│   └── app.py
-│
+├── financial_news_Data.csv
+├── app.py
 ├── requirements.txt
 └── README.md
 ```
@@ -112,24 +103,24 @@ financial-topic-modeling
 
 ```bash
 pip install -r requirements.txt
-streamlit run app/app.py
+streamlit run app.py
 ```
 
 ---
 
 ## 🌐 Deployment
 
-The application can be deployed using
+The application is deployed using
 Streamlit Community Cloud
 
 ---
 
 ## 💡 Key Learnings
 
-* Importance of NLP preprocessing in traditional models
-* Transformer models improve semantic understanding
-* Trade-off between model complexity and interpretability
-* Real-world challenges in topic modeling (data size, clustering issues)
+* Importance of preprocessing in NLP pipelines
+* Differences between classical and transformer-based models
+* Handling real-world deployment challenges
+* Trade-offs between interpretability and performance
 
 ---
 
@@ -139,9 +130,9 @@ Streamlit Community Cloud
 
 ---
 
-## 📌 Future Improvements
+## 🚀 Future Improvements
 
 * Real-time API integration in dashboard
-* Automated topic labeling using LLMs
-* Time-series trend analysis
+* Automated topic labeling
+* Sentiment analysis integration
 * Advanced UI enhancements

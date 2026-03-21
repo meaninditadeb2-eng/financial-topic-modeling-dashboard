@@ -1,0 +1,6 @@
+streamlit
+pandas
+bertopic
+sentence-transformers
+scikit-learn
+plotly
